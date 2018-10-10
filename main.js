@@ -12,7 +12,6 @@ var onRollClicked = function() {
         total += wounds;
         potential += dicePerUnit;
     }
-    console.log("total: " + total);
-    console.log("potential: " + potential);
-    console.log("percentage: " + ((total / potential) * 100) + "%");
-}
+    var outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = "total succeeded to wounds: " + total + "<br>potential to wounds: " + potential + "<br>percentage: " + ((total / potential) * 100) + "%";
+};
