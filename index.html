@@ -1,0 +1,24 @@
+<head>
+    <style>
+    body {
+        font-family: monospace
+    }
+    </style>
+    <script src="Dice.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    Dice per unit: <input id="dicePerUnit" type="number" value="20"></input><br>
+    Amt of units: <input id="amountOfUnits" type="number" value="1000"></input><br>
+    Reroll fails: 
+    <select id="rerollFails">
+        <option value="true">On</option>
+        <option value="false">Off</option>
+    </select><br>
+    Reroll ones: 
+    <select id="rerollOnes">
+        <option value="true">On</option>
+        <option value="false">Off</option>
+    </select><br>
+    <button onclick="onRollClicked()">Go!</button>
+</body>
